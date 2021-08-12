@@ -2,7 +2,7 @@
 // vue.config.js
 const webpack = require('webpack')
 module.exports = {
-    // 选项
+	// 选项
 }
 ```
 
@@ -149,7 +149,7 @@ module.exports = {
 			AMap: "AMap",
 			AMapUI: "AMapUI"
 		}
-  }
+	}
 }
 ```
 
@@ -170,7 +170,7 @@ module.exports = {
 - Type: `boolean`
 - Default: `true`
 
-```
+```js
 module.exports = {
 	productionSourceMap: true
 }
@@ -187,7 +187,7 @@ module.exports = {
 
 是否开启eslint保存检测
 
-- Type: `boolean` | `'warning'` | `'default'` | `'error'
+- Type: `boolean` | `'warning'` | `'default'` | `'error'`
 - Default: `default`
 
 ```js
