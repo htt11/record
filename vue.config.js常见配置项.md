@@ -28,7 +28,7 @@ module.exports = {
 
 ```js
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production'
+    publicPath: process.env.NODE_ENV === 'production' ? './dist/': './'
 }
 ```
 
@@ -124,7 +124,6 @@ module.exports = {
     	resolve: {
 			alias: {
 				'components': '@/components',
-				'content': 'components/content',
 				'common': 'components/common',
 				'assets': '@/assets',
 				'network': '@/network',
@@ -160,6 +159,19 @@ module.exports = {
 允许对内部的 webpack 配置进行更细粒度的修改，链式操作；
 
 - Type: `Function`
+
+```js
+module.exports = {
+	chainWebpack: config => {	
+		config
+        	.plugin('html')
+        	.tap((args) => {
+            	args[0].title = 'Custom title';		// 设置页面标题
+            	args[0].favicon = require('public/favicon.ico');
+        })
+	}
+}
+```
 
 [webpack > 链式操作 (高级)](https://cli.vuejs.org/zh/guide/webpack.html#链式操作-高级)
 
