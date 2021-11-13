@@ -21,7 +21,7 @@
 
 - **注意**，typeOf是一个操作符而不是函数，因此例子中的圆括号可用可不用，非必需；
 
-- 关于`typeOf null = object`，因为特殊值null被认为是一个空的对象引用；
+- 关于`typeOf null = object`，因为特殊值null被认为是一个空的对象引用（即空对象指针）；
 
 - Safari 5及之前版本、Chrome 7及之前的版本在对`正则表达式`调用typeOf操作符时会返回`“function”`，而其他浏览器在这种情况下会返回`"object"`；
 
