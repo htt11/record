@@ -1,6 +1,6 @@
 ## vue中echats图表自适应窗口的方法：
 
-在使用echarts时,为了兼容移动端.使用了flxe布局，出现echarts超出父盒子宽度的问题；
+在使用echarts时.对其父盒子使用了flxe布局，出现echarts超出父盒子宽度的问题；
 
 echarts绘制机制：echarts图形只绘制一次，且绘制时自动获取父级大小填写宽度；
 
