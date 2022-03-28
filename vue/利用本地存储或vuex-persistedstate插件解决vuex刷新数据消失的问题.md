@@ -14,6 +14,7 @@ vuex可以进行全局的状态管理，但刷新后数据会消失；
 **问题**：手动写比较麻烦
 
 ### 2. 利用插件 vuex-persistedstate
+vuex-persistedstate可以让vuex中的数据持久保存在sessionstorage或localstorage中，刷新后不会变成初始状态，实现 vuex 的持久化；
 
 **原理**：结合了存储方式,只是统一的配置就不需要手动每次都写存储方法
 
